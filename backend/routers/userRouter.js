@@ -292,6 +292,10 @@ router.post("/login", async (req, res) => {
         secure: true,
         sameSite: "none",
       })
+      .json({
+        status: true,
+        err: "",
+      })
       .send();
   } catch (err) {
     console.error(err);
