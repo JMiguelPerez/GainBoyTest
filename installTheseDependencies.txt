@@ -1,0 +1,11 @@
+gainboy lib dependencies:
+
+nodemon
+mongoose
+bcrypt // not necessary
+bcryptjs
+dotenv
+jsonwebtoken
+cookie-parser
+nodemailer
+uuid

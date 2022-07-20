@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cookieParser = require("cookie-parser");
 
 dotenv.config();
 
@@ -28,15 +29,5 @@ mongoose.connect(
 // set up the routes
 app.use("/auth", require("./routers/userRouter"));
 app.use("/customer", require("./routers/customerRouter"));
+// app.use("/signup", require("./routers/registerRouter"));
 
-/*
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://mern-auth-template-tutorial.netlify.app",
-    ],
-    credentials: true,
-  })
-);
-*/
