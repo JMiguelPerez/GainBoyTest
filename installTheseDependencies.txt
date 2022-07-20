@@ -1,11 +1,3 @@
 gainboy lib dependencies:
 
-nodemon
-mongoose
-bcrypt // not necessary
-bcryptjs
-dotenv
-jsonwebtoken
-cookie-parser
-nodemailer
-uuid
+sudo npm install node express nodemon mongoose bcryptjs dotenv jsonwebtoken cookie-parser nodemailer uuid
