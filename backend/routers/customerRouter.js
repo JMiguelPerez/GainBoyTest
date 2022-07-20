@@ -1,9 +1,11 @@
 const router = require("express").Router();
 const Customer = require("../models/customerModel");
-const auth = require("../middleware/auth");
+const auth = require("../models/middleware/auth");
 
 //add customer [add workout template]
-router.post("/", auth, async (req, res) => {
+
+// before handling async request will handle request through auth
+router.post("/customer", auth, async (req, res) => {
   try {
     const { name } = req.body;
     //give customer name

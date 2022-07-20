@@ -1,4 +1,4 @@
-//provide security, only loggedin users can add manipulate database 
+//provide security, only loggedin users can manipulate database 
 const jwt = require("jsonwebtoken");
 
 function auth(req, res, next) {
