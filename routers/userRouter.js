@@ -249,6 +249,7 @@ router.get("/verified", (req, res) => {
 router.post("/test", async (req, res) => {
   try {
     const { test } = req.body;
+    console.log("is this aight?");
     return res.json({ youput: test });
   }
   catch
