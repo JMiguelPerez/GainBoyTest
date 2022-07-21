@@ -249,7 +249,7 @@ router.get("/verified", (req, res) => {
 router.post("/test", async (req, res) => {
   try {
     const { test } = req.body;
-    console.log("is this aight?");
+
     return res.json({ youput: test });
   }
   catch
@@ -262,7 +262,7 @@ router.post("/test", async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
-
+    console.log("is this aight 1");
     // validate
     if (!email || !password)
       return res
@@ -285,6 +285,7 @@ router.post("/login", async (req, res) => {
       }
     }
 
+    console.log("is this aight 2");
     // sign the token
 
     const token = jwt.sign(
@@ -295,6 +296,8 @@ router.post("/login", async (req, res) => {
     );
 
     // send the token in a HTTP-only cookie
+
+    console.log("is this aight 3");
 
     res
       .cookie("token", token, {
