@@ -246,7 +246,16 @@ router.get("/verified", (req, res) => {
   res.sendFile(path.join(__dirname, "../../frontend/src/pages/verified")); // ------------------------------------------------------------------------ possibly deprecated
 })
 
-
+router.post("/test", async (req, res) => {
+  try {
+    const { test } = req.body;
+    return res.json({ youput: test });
+  }
+  catch
+  {
+    return res.json(error);
+  }
+})
 
 // log in API
 router.post("/login", async (req, res) => {
