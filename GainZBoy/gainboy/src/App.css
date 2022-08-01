@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+.loginStuff
+{
+  text-align: center;
+  margin: auto auto;
+}
+*/
+
+body 
+{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body 
+{
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+.box
+{
+  border: solid;
+  width: 30%;
+  height: 80%;
+  margin: auto auto;
+}
+
+*/
+
+.box
+{
+  border: solid;
+  width: 480px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 19px;
+  background-color: rgb(48, 47, 47);
+  box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
+  margin: auto auto;
+}
+.boxForgot
+{
+  border: solid;
+  width: 500px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 19px;
+  background-color: rgb(48, 47, 47);
+  box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
+  margin: auto auto;
+}
+.boxHome
+{
+  border: none;
+  width: 400px;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 19px;
+  background-color: #fff;
+  margin: auto auto;
+  align-items: center;
+}
+
+.BoxContainer
+{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.FormContainer
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.NewAccount
+{
+  font-size: 12px;
+  color: rgba(100, 100, 100, 1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.NewAccount:hover
+{
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+input
+{
+  width: 100%;
+  height: 42px;
+  outline: none;
+  border: 1px solid rgba(200, 200, 200, 0.3);
+  padding: 0px 10px;
+  border-bottom: 1.4px solid transparent;
+}
+
+input::placeholder
+{
+  color: rgba(140, 140, 140, 1);
+}
+
+/*
+.loginButton
+{
+  width: 100%;
+  padding: 11px 40%;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 100px 100px 100px 100px;
+  cursor: pointer;
+  transition: all, 240ms ease-in-out;
+  
+}
+*/
+
+         
+.loginButton {
+  background-image: linear-gradient(to right, #1F1C2C 0%, #928DAB  51%, #1F1C2C  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.textLogo
+{
+  font-weight: 10;
+  color:rgba(15, 15, 15, 0.8);
+}
+
+.loginNavBar
+{
+  background-color: rgba(15, 15, 15, 0.7);
+  color: white;
+  padding: 1% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.loginNavBar ul
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navBar
+{
+  background-color: rgba(15, 15, 15, 0.7);
+  color: white;
+  padding: 1% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.navBar ul
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navBar a
+{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+
+.navBar li.active
+{
+  background-color: #555;
+}
+.navBar li:hover
+{
+  background-color: #777;
+}
+
+.Footer
+{
+  background-color: rgba(15, 15, 15, 0.7);
+  border-top: 1px solid #E7E7E7;
+  text-align: center;
+  flex: 0 0 50px;
+  position: fixed;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+h2
+{
+  text-align: left;
+}
+
+.homePageOptions
+{
+  list-style: none;
+  margin-left: -8%;
+}
+
+.homePageOption {
+  background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+  margin: 10px;
+  margin-bottom: 200px;/*added this*/
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.homePageOption:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.h1Title
+{
+  text-align: left;
+  margin: auto auto;
+  color: white;
+}
+
+
+
+.popUp
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.6);
+  transform: translate(-50%, -50%);
+}
+
+.popUpInner
+{
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: #FFF;
+  border: solid;
+  margin: auto auto;
+  top: 30%; 
+}
+
+.popUpInner .closeBtn
+{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.popUpInner .saveBtn
+{
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.addWorkoutList
+{
+  list-style: none;
+}
+

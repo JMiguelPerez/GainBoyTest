@@ -1,0 +1,103 @@
+Garbage documentation:
+
+paths
+	/auth/login:
+		[Inputs]
+			email
+			password
+		[Outputs]
+			status
+			fullname
+			userId
+			token               // new
+			errorMessage
+
+	/auth/register:
+		[Inputs]
+			fullname
+			email
+			password
+			passwordVerify
+		[Outputs]
+			status
+			errorMessage
+
+	/auth/createWorkout:
+		[Inputs]
+			token               // new
+			name
+			userId
+			reps
+			sets
+			totalWeight
+			timeSpent
+
+		[Outputs]
+			name
+			userId
+			reps
+			sets
+			totalWeight
+			timeSpent
+			_id      // workoutId
+			_v       // not used
+
+	/auth/updateWorkout:
+		[Inputs]
+			_id      // workout id
+			token               // new
+			name
+			userId
+			reps
+			sets
+			totalWeight
+			timeSpent
+		[Outputs]
+			status
+			message
+
+	/auth/displayWorkouts:
+		[Inputs]
+			token               // new
+			userId
+		[Outputs]
+			result: 
+			[
+
+				{
+				_id
+				name
+				userId
+				reps
+				sets
+				totalWeight
+				timeSpent
+				_v
+				},
+
+				{
+				_id
+				name
+				userId
+				reps
+				sets
+				totalWeight
+				timeSpent
+				_v
+				},
+				...
+			]
+
+
+	/auth/deleteWorkout:
+		[Inputs]
+			token               // new
+			_id
+		[Outputs]
+			status
+			message
+
+// not really an API, simply delete token from browser onClick()
+GET	/auth/logout:
+		[Inputs]
+		[Outputs]
